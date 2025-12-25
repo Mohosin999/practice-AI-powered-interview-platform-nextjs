@@ -18,7 +18,7 @@ Built with Next.js, TypeScript, Firebase, VAPI, Google Gemini AI and Tailwind CS
 
 ## 🚀 Live Demo
 
-[![Project Screenshot](./public/project_photo.png)](https://mockai.vercel.app/)
+[![Project Screenshot](./public/project_photo.png)](https://github.com/Mohosin999)
 
 ## ✨ Features
 
