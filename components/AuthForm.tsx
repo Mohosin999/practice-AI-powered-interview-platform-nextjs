@@ -77,7 +77,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
         const userCredential = await createUserWithEmailAndPassword(
           auth,
           email,
-          password
+          password,
         );
 
         const result = await signUp({
@@ -90,7 +90,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
         if (!result || !result.success) {
           toast.error(
             result?.message ||
-              "This email is already in use. Please try another."
+              "This email is already in use. Please try another.",
           );
           return;
         }
@@ -103,7 +103,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
         const userCredential = await signInWithEmailAndPassword(
           auth,
           email,
-          password
+          password,
         );
 
         const idToken = await userCredential.user.getIdToken();
@@ -139,7 +139,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
   const isSignIn = type === "sign-in";
 
   return (
-    <div className="card-border lg:min-w-[566px]">
+    <div className="card-border lg:min-w-[466px]">
       <div className="flex flex-col gap-6 card py-14 px-6 md:px-10">
         <div className="flex flex-row gap-2 justify-center">
           <Image src="/logo.png" alt="logo" height={32} width={38} />
